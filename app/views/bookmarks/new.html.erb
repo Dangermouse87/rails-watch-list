@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="text-center">
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.association :movie %>
+      <%= f.input :comment %>
+      <%= f.submit class:'btn btn-primary' %>
+    <% end %>
+    <%= link_to 'Cancel', lists_path, class:'btn btn-danger' %>
+  </div>
+</div>
