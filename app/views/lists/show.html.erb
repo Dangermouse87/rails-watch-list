@@ -1,5 +1,6 @@
 <div class="container">
   <h1 class='text-center'><%= @list.name %></h1>
+  <%= link_to "Back to Lists", root_path, class:'btn btn-primary' %>
   <%= link_to "New Bookmark", new_list_bookmark_path(list_id:@list), class:'btn btn-primary' %>
     <div class="row">
       <% @list.bookmarks.each do |bookmark| %>
